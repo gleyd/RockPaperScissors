@@ -18,6 +18,8 @@
 		4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
 		4AE2798922943640003676F1 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE27985229435F8003676F1 /* HandSign.swift */; };
 		4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
+		4AE2798C229444D0003676F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* User.swift */; };
+		4AE2798D229444D5003676F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		4AE2798322942BA3003676F1 /* RoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTests.swift; sourceTree = "<group>"; };
 		4AE27985229435F8003676F1 /* HandSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSign.swift; sourceTree = "<group>"; };
 		4AE2798722943624003676F1 /* RoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPresenter.swift; sourceTree = "<group>"; };
+		4AE2798B229444D0003676F1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE27985229435F8003676F1 /* HandSign.swift */,
+				4AE2798B229444D0003676F1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +246,7 @@
 				4AE27986229435F8003676F1 /* HandSign.swift in Sources */,
 				4AE2796222942912003676F1 /* ViewController.swift in Sources */,
 				4AE2796022942912003676F1 /* AppDelegate.swift in Sources */,
+				4AE2798C229444D0003676F1 /* User.swift in Sources */,
 				4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +258,7 @@
 				4AE2798922943640003676F1 /* HandSign.swift in Sources */,
 				4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */,
 				4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */,
+				4AE2798D229444D5003676F1 /* User.swift in Sources */,
 				4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
