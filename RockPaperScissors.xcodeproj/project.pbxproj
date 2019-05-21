@@ -14,6 +14,10 @@
 		4AE2796A22942912003676F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2796822942912003676F1 /* LaunchScreen.storyboard */; };
 		4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */; };
 		4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798322942BA3003676F1 /* RoundTests.swift */; };
+		4AE27986229435F8003676F1 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE27985229435F8003676F1 /* HandSign.swift */; };
+		4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
+		4AE2798922943640003676F1 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE27985229435F8003676F1 /* HandSign.swift */; };
+		4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		4AE2797622942912003676F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE2798322942BA3003676F1 /* RoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTests.swift; sourceTree = "<group>"; };
+		4AE27985229435F8003676F1 /* HandSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSign.swift; sourceTree = "<group>"; };
+		4AE2798722943624003676F1 /* RoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 		4AE2798122942925003676F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4AE27985229435F8003676F1 /* HandSign.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 		4AE279822294292F003676F1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				4AE2798722943624003676F1 /* RoundPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -231,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE27986229435F8003676F1 /* HandSign.swift in Sources */,
 				4AE2796222942912003676F1 /* ViewController.swift in Sources */,
 				4AE2796022942912003676F1 /* AppDelegate.swift in Sources */,
+				4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE2798922943640003676F1 /* HandSign.swift in Sources */,
 				4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */,
 				4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */,
+				4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,19 +7,9 @@
 
 import XCTest
 
-enum HandSign {
-    case rock
-    case paper
-    case scissors
-}
 
-class RoundPresenter {
 
-    func result(choice1: HandSign, choice2: HandSign) -> HandSign{
-        return .paper
-    }
-    
-}
+
 
 
 class RoundTests: XCTestCase {
@@ -46,4 +36,21 @@ class RoundTests: XCTestCase {
         // Assert
         XCTAssertEqual(expected, result)
     }
+    
+    func testScissorsBeatsPaper(){
+        // Arrange
+        let choice1 : HandSign = .scissors
+        let choice2 : HandSign = .paper
+        let round : RoundPresenter = RoundPresenter()
+        
+        let expected : HandSign = .scissors
+        
+        // Act
+        let result = round.result(choice1: choice1, choice2: choice2)
+        
+        // Assert
+        XCTAssertEqual(expected, result)
+    }
+    
+    
 }
