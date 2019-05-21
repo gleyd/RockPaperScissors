@@ -52,5 +52,65 @@ class RoundTests: XCTestCase {
         XCTAssertEqual(expected, result)
     }
     
+    func testPaperBeatsRock(){
+        // Arrange
+        let choice1 : HandSign = .paper
+        let choice2 : HandSign = .rock
+        let round : RoundPresenter = RoundPresenter()
+        
+        let expected : HandSign = .paper
+        
+        // Act
+        let result = round.result(choice1: choice1, choice2: choice2)
+        
+        // Assert
+        XCTAssertEqual(expected, result)
+    }
+    
+    func testScissorsLoseRock(){
+        // Arrange
+        let choice1 : HandSign = .scissors
+        let choice2 : HandSign = .rock
+        let round : RoundPresenter = RoundPresenter()
+        
+        let expected : HandSign = .rock
+        
+        // Act
+        let result = round.result(choice1: choice1, choice2: choice2)
+        
+        // Assert
+        XCTAssertEqual(expected, result)
+    }
+    
+    func testPaperLoseScissors(){
+        // Arrange
+        let choice1 : HandSign = .paper
+        let choice2 : HandSign = .scissors
+        let round : RoundPresenter = RoundPresenter()
+        
+        let expected : HandSign = .scissors
+        
+        // Act
+        let result = round.result(choice1: choice1, choice2: choice2)
+        
+        // Assert
+        XCTAssertEqual(expected, result)
+    }
+    
+    func testRockLosePaper(){
+        // Arrange
+        let choice1 : HandSign = .rock
+        let choice2 : HandSign = .paper
+        let round : RoundPresenter = RoundPresenter()
+        
+        let expected : HandSign = .paper
+        
+        // Act
+        let result = round.result(choice1: choice1, choice2: choice2)
+        
+        // Assert
+        XCTAssertEqual(expected, result)
+    }
+    
     
 }

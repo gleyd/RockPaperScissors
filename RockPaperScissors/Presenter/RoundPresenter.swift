@@ -12,6 +12,10 @@ class RoundPresenter {
     func result(choice1: HandSign, choice2: HandSign) -> HandSign{
         if choice1 == .rock && choice2 == .scissors {
            return choice1
+        } else if choice1 == .scissors && choice2 == .paper {
+            return choice1
+        } else if choice1 == .paper && choice2 == .rock {
+            return choice1
         } else {
           return choice2
         }
