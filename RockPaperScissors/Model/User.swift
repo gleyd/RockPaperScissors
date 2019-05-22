@@ -10,10 +10,11 @@ import Foundation
 class User : Equatable{
     
     private let id : Int
-    var choice : HandSign?
+    var handSign : HandSign
     
     init(id:Int) {
         self.id = id
+        handSign = HandSign()
     }
     
     static func ==(lhs: User, rhs: User) -> Bool {
