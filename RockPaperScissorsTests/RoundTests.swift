@@ -208,7 +208,7 @@ class RoundTests: XCTestCase {
         
         let expected :Sign = .rock
         // Act
-        round.setHandSignPlayer(player: player, sign: .rock)
+        round.setChoiceSignPlayer(player: player, sign: .rock)
         
         // Assert
         if let result = player.choice {
@@ -226,7 +226,7 @@ class RoundTests: XCTestCase {
         
         let expected :Sign = .paper
         // Act
-        round.setHandSignPlayer(player: player, sign: .paper)
+        round.setChoiceSignPlayer(player: player, sign: .paper)
         
         // Assert
         if let result = player.choice {
@@ -244,7 +244,7 @@ class RoundTests: XCTestCase {
         
         let expected :Sign = .scissors
         // Act
-        round.setHandSignPlayer(player: player, sign: .scissors)
+        round.setChoiceSignPlayer(player: player, sign: .scissors)
         
         // Assert
         if let result = player.choice {
@@ -255,7 +255,5 @@ class RoundTests: XCTestCase {
         }
     }
     
-        
-   
     
 }

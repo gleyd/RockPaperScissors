@@ -10,7 +10,7 @@ import Foundation
 class RoundPresenter {
     
     func computerVersusComputer() -> Player?{
-        // Arrange
+       
         let computer1 = Computer(id:1)
         let computer2 = Computer(id:2)
         computer1.setRandomChoice()
@@ -19,8 +19,10 @@ class RoundPresenter {
         return self.result(player1: computer1, player2: computer2)
     }
     
+   
+    
    // set Choice of the player
-    func setHandSignPlayer(player: Player, sign: Sign){
+    func setChoiceSignPlayer(player: Player, sign: Sign){
       player.choice = sign
     }
     
