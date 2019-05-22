@@ -7,19 +7,20 @@
 
 import Foundation
 
-class User : Equatable{
+class Player : Equatable{
     
     private let id : Int
-    var handSign : HandSign
+    var choice : Sign?
     
     init(id:Int) {
         self.id = id
-        handSign = HandSign()
     }
     
-    static func ==(lhs: User, rhs: User) -> Bool {
+    static func ==(lhs: Player, rhs: Player) -> Bool {
         return lhs.id == rhs.id
     }
+    
+    
 }
 
 
