@@ -9,26 +9,36 @@ import Foundation
 
 class RoundPresenter {
     
+    func computerVersusComputer() -> Player?{
+       
+        let computer1 = Computer(id:1)
+        let computer2 = Computer(id:2)
+        computer1.setRandomChoice()
+        computer2.setRandomChoice()
+        
+        return self.result(player1: computer1, player2: computer2)
+    }
     
+   
     
-   // set Choice of the user
-    func setHandSignUser(user: User, handSign: HandSign){
-      user.choice = handSign
+   // set Choice of the player
+    func setChoiceSignPlayer(player: Player, sign: Sign){
+      player.choice = sign
     }
     
     // if nil, don't have winner, it's draw
-    func result(user1: User, user2: User) -> User?{
-        guard let choice1 = user1.choice, let choice2 = user2.choice else {return nil }
+    func result(player1: Player, player2: Player) -> Player?{
+        guard let choice1 = player1.choice, let choice2 = player2.choice else {return nil }
         guard choice1 != choice2 else {return nil}
         switch (choice1,choice2) {
         case (.rock,.scissors):
-            return user1
+            return player1
         case (.scissors,.paper):
-            return user1
+            return player1
         case (.paper,.rock):
-            return user1
+            return player1
         default:
-           return  user2
+           return  player2
         }
     }
     

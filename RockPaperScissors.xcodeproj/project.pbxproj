@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ABBB95122956C6600A17018 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798E22954C26003676F1 /* Sign.swift */; };
+		4ABBB95222956CAC00A17018 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2799022954E1F003676F1 /* Computer.swift */; };
 		4AE2796022942912003676F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2795F22942912003676F1 /* AppDelegate.swift */; };
 		4AE2796222942912003676F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2796122942912003676F1 /* ViewController.swift */; };
 		4AE2796522942912003676F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2796322942912003676F1 /* Main.storyboard */; };
@@ -14,12 +16,12 @@
 		4AE2796A22942912003676F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2796822942912003676F1 /* LaunchScreen.storyboard */; };
 		4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */; };
 		4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798322942BA3003676F1 /* RoundTests.swift */; };
-		4AE27986229435F8003676F1 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE27985229435F8003676F1 /* HandSign.swift */; };
 		4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
-		4AE2798922943640003676F1 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE27985229435F8003676F1 /* HandSign.swift */; };
 		4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
-		4AE2798C229444D0003676F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* User.swift */; };
-		4AE2798D229444D5003676F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* User.swift */; };
+		4AE2798C229444D0003676F1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* Player.swift */; };
+		4AE2798D229444D5003676F1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* Player.swift */; };
+		4AE2798F22954C26003676F1 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798E22954C26003676F1 /* Sign.swift */; };
+		4AE2799122954E1F003676F1 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2799022954E1F003676F1 /* Computer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +46,10 @@
 		4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		4AE2797622942912003676F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE2798322942BA3003676F1 /* RoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTests.swift; sourceTree = "<group>"; };
-		4AE27985229435F8003676F1 /* HandSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSign.swift; sourceTree = "<group>"; };
 		4AE2798722943624003676F1 /* RoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPresenter.swift; sourceTree = "<group>"; };
-		4AE2798B229444D0003676F1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4AE2798B229444D0003676F1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4AE2798E22954C26003676F1 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		4AE2799022954E1F003676F1 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +132,9 @@
 		4AE2798122942925003676F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4AE27985229435F8003676F1 /* HandSign.swift */,
-				4AE2798B229444D0003676F1 /* User.swift */,
+				4AE2798B229444D0003676F1 /* Player.swift */,
+				4AE2798E22954C26003676F1 /* Sign.swift */,
+				4AE2799022954E1F003676F1 /* Computer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,10 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE27986229435F8003676F1 /* HandSign.swift in Sources */,
 				4AE2796222942912003676F1 /* ViewController.swift in Sources */,
+				4AE2799122954E1F003676F1 /* Computer.swift in Sources */,
+				4AE2798F22954C26003676F1 /* Sign.swift in Sources */,
 				4AE2796022942912003676F1 /* AppDelegate.swift in Sources */,
-				4AE2798C229444D0003676F1 /* User.swift in Sources */,
+				4AE2798C229444D0003676F1 /* Player.swift in Sources */,
 				4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,10 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE2798922943640003676F1 /* HandSign.swift in Sources */,
+				4ABBB95222956CAC00A17018 /* Computer.swift in Sources */,
 				4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */,
 				4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */,
-				4AE2798D229444D5003676F1 /* User.swift in Sources */,
+				4ABBB95122956C6600A17018 /* Sign.swift in Sources */,
+				4AE2798D229444D5003676F1 /* Player.swift in Sources */,
 				4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
