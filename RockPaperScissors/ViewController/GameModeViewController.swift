@@ -15,7 +15,7 @@ class GameModeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +26,19 @@ class GameModeViewController: UIViewController {
     }
     */
 
+}
+
+extension GameModeViewController : GameModeViewProtocol {
+    func choosePlayerVersusComputer() {
+        let vc = GameViewController.create(gameMode: .playerVersusComputer)
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func chooseComputerVersusComputer() {
+        let vc = GameViewController.create(gameMode: .computerVersusComputer)
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
+    
 }

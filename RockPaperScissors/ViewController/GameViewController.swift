@@ -7,11 +7,23 @@
 
 import UIKit
 
+
 class GameViewController: UIViewController {
 
+    class func create(gameMode:GameMode) -> GameViewController {
+        let board = UIStoryboard(name: "Main", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+         vc.gameMode = gameMode
+        return vc
+    }
+    
+    let presenter = RoundPresenter()
+    var gameMode : GameMode?
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter.attachView(self)
         // Do any additional setup after loading the view.
     }
     
