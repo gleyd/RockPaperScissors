@@ -12,13 +12,13 @@ class RoundPresenter {
     
     
    // set Choice of the user
-    func setHandSignUser(user: User, handSign: HandSign){
-      user.choice = handSign
+    func setHandSignUser(user: User, sign: Sign){
+      user.handSign.choice = sign
     }
     
     // if nil, don't have winner, it's draw
     func result(user1: User, user2: User) -> User?{
-        guard let choice1 = user1.choice, let choice2 = user2.choice else {return nil }
+        guard let choice1 = user1.handSign.choice, let choice2 = user2.handSign.choice else {return nil }
         guard choice1 != choice2 else {return nil}
         switch (choice1,choice2) {
         case (.rock,.scissors):
