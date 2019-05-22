@@ -255,7 +255,20 @@ class RoundTests: XCTestCase {
         }
     }
     
-    
+    func testComputerVersusComputer(){
+        // Arrange
+         let computer1 = Computer()
+         let computer2 = Computer()
+         computer1.handsign.random
+         computer2.handsign.random
+        
+        let expected = round.result(user1: computer1, user2: computer2)
+        // Act
+        let result = round.playComputerVersusComputer()
+        // Assert
+         XCTAssertEqual(expected, result)
+        
+    }
     
     
 }
