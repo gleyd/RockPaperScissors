@@ -16,12 +16,27 @@ class GameComputerVsComputerViewController: UIViewController {
         return vc
     }
     
+    @IBOutlet weak var resultGame: UILabel!
+    @IBOutlet weak var playBtn: UIButton!
+    
+    
     let presenter = ComputerVsComputerRoundPresenter()
+    
+    var computer1 : Computer = Computer(id: 1, name: "Ordinateur1")
+    var computer2 : Computer = Computer(id: 2, name: "Ordinateur2")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attachView(self)
+        self.resultGame.numberOfLines = 0
+        self.resultGame.lineBreakMode = .byWordWrapping
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func play(_ sender: Any) {
+        self.computer1.setRandomChoice()
+        self.computer2.setRandomChoice()
+        self.presenter.resultComputerVsComputer(computer1: computer1, computer2: computer2)
     }
     
     
@@ -43,6 +58,6 @@ class GameComputerVsComputerViewController: UIViewController {
 
 extension GameComputerVsComputerViewController : GameViewProtocol {
     func updateResult(result: String) {
-        
+      self.resultGame.text = result
     }
 }

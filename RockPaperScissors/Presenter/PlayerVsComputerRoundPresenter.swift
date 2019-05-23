@@ -30,22 +30,20 @@ class PlayerVsComputerRoundPresenter : RoundPresenter {
     }
     
     func resultPlayerVsComputer(player: Player, computer: Player) {
-        if let resultPlayer = self.result(player1: player, player2: computer){
-            var result = ""
-            switch resultPlayer {
+        guard let choice1 = player.choice, let choice2 = computer.choice else {return}
+        var result = ""
+        if let resultWinner = self.result(player1: player, player2: computer){
+            switch resultWinner {
             case player :
-                guard let choice1 = player.choice, let choice2 = computer.choice else {return}
                 result = "\(player.name)(\(choice1.description)) gagne contre \(computer.name)(\(choice2.description))"
             case computer :
-                guard let choice1 = player.choice, let choice2 = computer.choice else {return}
                 result = "\(player.name)(\(choice1.description)) perd contre \(computer.name)(\(choice2.description))"
             default : break
             }
-            self.view?.updateResult(result: result)
         } else {
-            let result = "Egalité"
-            self.view?.updateResult(result: result)
+            result = "Egalité (\(choice1.description))"
         }
+        self.view?.updateResult(result: result)
     }
 
 }

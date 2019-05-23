@@ -26,6 +26,7 @@ class GamePlayerVsComputerViewController: UIViewController {
 
     var player : Player = Player(id: 1, name: "Joueur")
     var computer : Computer = Computer(id: 2, name: "Ordinateur")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attachView(self)
