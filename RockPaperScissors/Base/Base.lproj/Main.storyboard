@@ -17,28 +17,116 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSr-T3-EKO">
+                                <rect key="frame" x="102" y="262" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ordinateur vs Ordinateur"/>
+                                <connections>
+                                    <action selector="goGameComputerVsComputer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeO-go-Uey"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pierre Feuille Cisseau" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgA-PW-Eum">
+                                <rect key="frame" x="15" y="70" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbD-lv-p5D">
+                                <rect key="frame" x="115" y="224" width="144" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Joueur vs Ordinateur"/>
+                                <connections>
+                                    <action selector="goGamePlayerVsComputer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g55-MT-WO9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rgA-PW-Eum" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MYi-0n-vPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rgA-PW-Eum" secondAttribute="trailing" constant="15" id="bzX-NA-nqN"/>
+                            <constraint firstItem="rgA-PW-Eum" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="fOa-j8-71b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-406" y="-84"/>
+            <point key="canvasLocation" x="-542" y="27"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Game Player Vs Computer View Controller-->
         <scene sceneID="Qzt-gX-AjH">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" id="tzf-s2-1vz" customClass="GameViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamePlayerVsComputerViewController" id="tzf-s2-1vz" customClass="GamePlayerVsComputerViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xrb-ik-xdS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player vs Computer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-sz-n45">
+                                <rect key="frame" x="15" y="70" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMP-h9-tr3">
+                                <rect key="frame" x="164.5" y="587" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dissMissView:" destination="tzf-s2-1vz" eventType="touchUpInside" id="l7w-Y8-hFr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3GF-wZ-zch" firstAttribute="trailing" secondItem="ZMf-sz-n45" secondAttribute="trailing" constant="15" id="5UQ-m8-Kr0"/>
+                            <constraint firstItem="ZMf-sz-n45" firstAttribute="top" secondItem="3GF-wZ-zch" secondAttribute="top" constant="50" id="Bmo-5U-QhK"/>
+                            <constraint firstItem="ZMf-sz-n45" firstAttribute="leading" secondItem="3GF-wZ-zch" secondAttribute="leading" constant="15" id="P2v-sP-GdZ"/>
+                            <constraint firstItem="3GF-wZ-zch" firstAttribute="bottom" secondItem="IMP-h9-tr3" secondAttribute="bottom" constant="50" id="Tvy-kF-zsc"/>
+                            <constraint firstItem="IMP-h9-tr3" firstAttribute="centerX" secondItem="Xrb-ik-xdS" secondAttribute="centerX" id="gtb-0Y-JgP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3GF-wZ-zch"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gZ-Uc-exB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="-84"/>
+            <point key="canvasLocation" x="225" y="-372"/>
+        </scene>
+        <!--Game Computer Vs Computer View Controller-->
+        <scene sceneID="X4C-Ds-nqP">
+            <objects>
+                <viewController storyboardIdentifier="GameComputerVsComputerViewController" id="PY2-X2-4Ip" customClass="GameComputerVsComputerViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Dk-7X-SKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer vs Computer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-PS-U5v">
+                                <rect key="frame" x="15" y="70" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9S-95-otm">
+                                <rect key="frame" x="164.5" y="587" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dissMissView:" destination="PY2-X2-4Ip" eventType="touchUpInside" id="g82-Og-uhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K90-le-BLh" firstAttribute="bottom" secondItem="O9S-95-otm" secondAttribute="bottom" constant="50" id="DOM-42-jA5"/>
+                            <constraint firstItem="K90-le-BLh" firstAttribute="trailing" secondItem="2L3-PS-U5v" secondAttribute="trailing" constant="15" id="Uh3-mk-HV7"/>
+                            <constraint firstItem="O9S-95-otm" firstAttribute="centerX" secondItem="8Dk-7X-SKV" secondAttribute="centerX" id="bMv-fr-MTP"/>
+                            <constraint firstItem="2L3-PS-U5v" firstAttribute="top" secondItem="K90-le-BLh" secondAttribute="top" constant="50" id="bcI-3b-5ag"/>
+                            <constraint firstItem="2L3-PS-U5v" firstAttribute="leading" secondItem="K90-le-BLh" secondAttribute="leading" constant="15" id="yNq-Qb-uND"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K90-le-BLh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9j-Nz-NbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="301"/>
         </scene>
         <!--Pop Up Result Game View Controller-->
         <scene sceneID="H8e-0j-YVj">

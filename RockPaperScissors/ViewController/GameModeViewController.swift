@@ -14,6 +14,15 @@ class GameModeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+
+    @IBAction func goGamePlayerVsComputer(_ sender: Any) {
+       choosePlayerVersusComputer()
+    }
+    
+    
+    @IBAction func goGameComputerVsComputer(_ sender: Any) {
+       chooseComputerVersusComputer()
+    }
     
     
     /*
@@ -30,12 +39,12 @@ class GameModeViewController: UIViewController {
 
 extension GameModeViewController : GameModeViewProtocol {
     func choosePlayerVersusComputer() {
-        let vc = GameViewController.create(gameMode: .playerVersusComputer)
+        let vc = GamePlayerVsComputerViewController.create()
         self.present(vc, animated: true, completion: nil)
     }
     
     func chooseComputerVersusComputer() {
-        let vc = GameViewController.create(gameMode: .computerVersusComputer)
+        let vc = GameComputerVsComputerViewController.create()
         self.present(vc, animated: true, completion: nil)
     }
     

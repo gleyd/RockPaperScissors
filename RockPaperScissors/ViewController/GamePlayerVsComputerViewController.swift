@@ -1,33 +1,34 @@
 //
-//  GameViewController.swift
+//  GamePlayerVsComputerViewController.swift
 //  RockPaperScissors
 //
-//  Created by esport on 22/05/2019.
+//  Created by esport on 23/05/2019.
 //
 
 import UIKit
 
+class GamePlayerVsComputerViewController: UIViewController {
 
-class GameViewController: UIViewController {
-
-    class func create(gameMode:GameMode) -> GameViewController {
+    class func create() -> GamePlayerVsComputerViewController {
         let board = UIStoryboard(name: "Main", bundle: nil)
-        let vc = board.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
-         vc.gameMode = gameMode
+        let vc = board.instantiateViewController(withIdentifier: "GamePlayerVsComputerViewController") as! GamePlayerVsComputerViewController
         return vc
     }
     
-    let presenter = RoundPresenter()
-    var gameMode : GameMode?
+    let presenter = PlayerVsComputerRoundPresenter()
+
     
-  
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attachView(self)
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func dissMissView(_ sender: Any) {
+  
+        //self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -40,9 +41,10 @@ class GameViewController: UIViewController {
 
 }
 
-extension GameViewController : GameViewProtocol {
+
+extension GamePlayerVsComputerViewController : GameViewProtocol {
     func chooseSign(sign: Sign) {
-        
+        print("Choise Sign")
     }
     
     func showPopUpResult() {
@@ -50,10 +52,10 @@ extension GameViewController : GameViewProtocol {
     }
     
     func hidePopUpResult() {
-         
+        
     }
     
- 
+    
     
     
 }

@@ -10,18 +10,27 @@
 		4A23A8B1229599CD0097B11E /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B0229599CD0097B11E /* GameModeViewController.swift */; };
 		4A23A8B3229599F10097B11E /* PopUpResultGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B2229599F10097B11E /* PopUpResultGameViewController.swift */; };
 		4A23A8B52295A5580097B11E /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B42295A5580097B11E /* GameMode.swift */; };
+		4A23A8B7229683FD0097B11E /* GamePlayerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */; };
+		4A23A8B9229684190097B11E /* GameComputerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */; };
+		4A23A8BB2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8BA2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift */; };
+		4A23A8BD229697E80097B11E /* ComputerVsComputerRoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8BC229697E80097B11E /* ComputerVsComputerRoundPresenter.swift */; };
+		4A23A8BE229698B40097B11E /* PlayerVsComputerRoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8BA2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift */; };
+		4A23A8BF229698B70097B11E /* ComputerVsComputerRoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8BC229697E80097B11E /* ComputerVsComputerRoundPresenter.swift */; };
+		4A23A8C1229699320097B11E /* PlayerVsComputerRoundPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8C0229699320097B11E /* PlayerVsComputerRoundPresenterTest.swift */; };
+		4A23A8C222969B550097B11E /* GameComputerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */; };
+		4A23A8C322969B570097B11E /* GamePlayerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */; };
+		4A23A8C422969B6A0097B11E /* GameModeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */; };
+		4A23A8C522969B6D0097B11E /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95522957BC800A17018 /* GameViewProtocol.swift */; };
 		4ABBB95122956C6600A17018 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798E22954C26003676F1 /* Sign.swift */; };
 		4ABBB95222956CAC00A17018 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2799022954E1F003676F1 /* Computer.swift */; };
 		4ABBB95622957BC800A17018 /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95522957BC800A17018 /* GameViewProtocol.swift */; };
-		4ABBB958229580C300A17018 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB957229580C300A17018 /* GameViewController.swift */; };
 		4ABBB95A22958E8600A17018 /* GameModeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */; };
 		4AE2796022942912003676F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2795F22942912003676F1 /* AppDelegate.swift */; };
-		4AE2796222942912003676F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2796122942912003676F1 /* ViewController.swift */; };
 		4AE2796522942912003676F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2796322942912003676F1 /* Main.storyboard */; };
 		4AE2796722942912003676F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2796622942912003676F1 /* Assets.xcassets */; };
 		4AE2796A22942912003676F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE2796822942912003676F1 /* LaunchScreen.storyboard */; };
 		4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */; };
-		4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798322942BA3003676F1 /* RoundTests.swift */; };
+		4AE2798422942BA3003676F1 /* RoundPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798322942BA3003676F1 /* RoundPresenterTests.swift */; };
 		4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
 		4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798722943624003676F1 /* RoundPresenter.swift */; };
 		4AE2798C229444D0003676F1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798B229444D0003676F1 /* Player.swift */; };
@@ -44,12 +53,15 @@
 		4A23A8B0229599CD0097B11E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
 		4A23A8B2229599F10097B11E /* PopUpResultGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpResultGameViewController.swift; sourceTree = "<group>"; };
 		4A23A8B42295A5580097B11E /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayerVsComputerViewController.swift; sourceTree = "<group>"; };
+		4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComputerVsComputerViewController.swift; sourceTree = "<group>"; };
+		4A23A8BA2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVsComputerRoundPresenter.swift; sourceTree = "<group>"; };
+		4A23A8BC229697E80097B11E /* ComputerVsComputerRoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerVsComputerRoundPresenter.swift; sourceTree = "<group>"; };
+		4A23A8C0229699320097B11E /* PlayerVsComputerRoundPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVsComputerRoundPresenterTest.swift; sourceTree = "<group>"; };
 		4ABBB95522957BC800A17018 /* GameViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewProtocol.swift; sourceTree = "<group>"; };
-		4ABBB957229580C300A17018 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewProtocol.swift; sourceTree = "<group>"; };
 		4AE2795C22942912003676F1 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE2795F22942912003676F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AE2796122942912003676F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4AE2796422942912003676F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AE2796622942912003676F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AE2796922942912003676F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +69,7 @@
 		4AE2797022942912003676F1 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		4AE2797622942912003676F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AE2798322942BA3003676F1 /* RoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTests.swift; sourceTree = "<group>"; };
+		4AE2798322942BA3003676F1 /* RoundPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPresenterTests.swift; sourceTree = "<group>"; };
 		4AE2798722943624003676F1 /* RoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPresenter.swift; sourceTree = "<group>"; };
 		4AE2798B229444D0003676F1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		4AE2798E22954C26003676F1 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
@@ -137,7 +149,8 @@
 			children = (
 				4AE2797422942912003676F1 /* RockPaperScissorsTests.swift */,
 				4AE2797622942912003676F1 /* Info.plist */,
-				4AE2798322942BA3003676F1 /* RoundTests.swift */,
+				4AE2798322942BA3003676F1 /* RoundPresenterTests.swift */,
+				4A23A8C0229699320097B11E /* PlayerVsComputerRoundPresenterTest.swift */,
 			);
 			path = RockPaperScissorsTests;
 			sourceTree = "<group>";
@@ -154,10 +167,10 @@
 		4AE279802294291F003676F1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4AE2796122942912003676F1 /* ViewController.swift */,
-				4ABBB957229580C300A17018 /* GameViewController.swift */,
 				4A23A8B0229599CD0097B11E /* GameModeViewController.swift */,
 				4A23A8B2229599F10097B11E /* PopUpResultGameViewController.swift */,
+				4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */,
+				4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -177,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				4AE2798722943624003676F1 /* RoundPresenter.swift */,
+				4A23A8BA2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift */,
+				4A23A8BC229697E80097B11E /* ComputerVsComputerRoundPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -283,15 +298,17 @@
 			files = (
 				4A23A8B3229599F10097B11E /* PopUpResultGameViewController.swift in Sources */,
 				4ABBB95A22958E8600A17018 /* GameModeViewProtocol.swift in Sources */,
-				4AE2796222942912003676F1 /* ViewController.swift in Sources */,
+				4A23A8B7229683FD0097B11E /* GamePlayerVsComputerViewController.swift in Sources */,
 				4AE2799122954E1F003676F1 /* Computer.swift in Sources */,
+				4A23A8BB2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift in Sources */,
 				4AE2798F22954C26003676F1 /* Sign.swift in Sources */,
 				4AE2796022942912003676F1 /* AppDelegate.swift in Sources */,
 				4A23A8B1229599CD0097B11E /* GameModeViewController.swift in Sources */,
-				4ABBB958229580C300A17018 /* GameViewController.swift in Sources */,
 				4A23A8B52295A5580097B11E /* GameMode.swift in Sources */,
 				4ABBB95622957BC800A17018 /* GameViewProtocol.swift in Sources */,
+				4A23A8B9229684190097B11E /* GameComputerVsComputerViewController.swift in Sources */,
 				4AE2798C229444D0003676F1 /* Player.swift in Sources */,
+				4A23A8BD229697E80097B11E /* ComputerVsComputerRoundPresenter.swift in Sources */,
 				4AE2798822943624003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,10 +317,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A23A8BF229698B70097B11E /* ComputerVsComputerRoundPresenter.swift in Sources */,
+				4A23A8C522969B6D0097B11E /* GameViewProtocol.swift in Sources */,
+				4A23A8C222969B550097B11E /* GameComputerVsComputerViewController.swift in Sources */,
+				4A23A8C322969B570097B11E /* GamePlayerVsComputerViewController.swift in Sources */,
 				4ABBB95222956CAC00A17018 /* Computer.swift in Sources */,
-				4AE2798422942BA3003676F1 /* RoundTests.swift in Sources */,
+				4AE2798422942BA3003676F1 /* RoundPresenterTests.swift in Sources */,
 				4AE2797522942912003676F1 /* RockPaperScissorsTests.swift in Sources */,
+				4A23A8BE229698B40097B11E /* PlayerVsComputerRoundPresenter.swift in Sources */,
+				4A23A8C1229699320097B11E /* PlayerVsComputerRoundPresenterTest.swift in Sources */,
 				4ABBB95122956C6600A17018 /* Sign.swift in Sources */,
+				4A23A8C422969B6A0097B11E /* GameModeViewProtocol.swift in Sources */,
 				4AE2798D229444D5003676F1 /* Player.swift in Sources */,
 				4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */,
 			);
