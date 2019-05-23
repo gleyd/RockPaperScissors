@@ -10,10 +10,17 @@ import Foundation
 class Player : Equatable{
     
     private let id : Int
+    var name : String
     var choice : Sign?
     
     init(id:Int) {
         self.id = id
+        self.name = "Player\(id)"
+    }
+    
+    init(id:Int, name: String) {
+        self.id = id
+        self.name = name
     }
     
     static func ==(lhs: Player, rhs: Player) -> Bool {
