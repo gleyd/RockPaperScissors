@@ -7,10 +7,21 @@
 
 import Foundation
 
+
 class RoundPresenter {
     
+    weak fileprivate var gameView : GameViewController?
+    
+    func attachView(_ view: GameViewController){
+       self.gameView = view
+    }
+    
+    func detachView(){
+        
+    }
+    
     func computerVersusComputer() -> Player?{
-       
+        
         let computer1 = Computer(id:1)
         let computer2 = Computer(id:2)
         computer1.setRandomChoice()
@@ -18,8 +29,6 @@ class RoundPresenter {
         
         return self.result(player1: computer1, player2: computer2)
     }
-    
-   
     
    // set Choice of the player
     func setChoiceSignPlayer(player: Player, sign: Sign){
