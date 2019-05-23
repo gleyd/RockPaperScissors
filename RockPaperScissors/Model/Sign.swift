@@ -17,4 +17,12 @@ enum Sign : String, CaseIterable {
             return self.rawValue
         }
     }
+    
+    var beatsList : Set<Sign> {
+        switch self {
+            case .rock : return [.scissors]
+            case .paper : return [.rock]
+            case .scissors : return [.paper]
+        }
+    }
 }

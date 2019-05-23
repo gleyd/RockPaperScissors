@@ -10,19 +10,14 @@ import Foundation
 
 class RoundPresenter {
 
-    // if nil, don't have winner, it's draw
-    func result(player1: Player, player2: Player) -> Player?{
-        guard let choice1 = player1.choice, let choice2 = player2.choice else {return nil }
-        guard choice1 != choice2 else {return nil}
-        switch (choice1,choice2) {
-        case (.rock,.scissors):
-            return player1
-        case (.scissors,.paper):
-            return player1
-        case (.paper,.rock):
-            return player1
-        default:
-           return  player2
+    
+    func resultGame(player1: Player, player2: Player) -> String{
+        guard let choice1 = player1.choice, let choice2 = player2.choice else {return "" }
+        guard choice1 != choice2 else {return "Egalité (\(choice1.description))"}
+        if choice1.beatsList.contains(choice2) {
+            return "\(player1.name)(\(choice1.description)) gagne contre \(player2.name)(\(choice2.description))"
+        } else {
+            return "\(player1.name)(\(choice1.description)) perd contre \(player2.name)(\(choice2.description))"
         }
     }
 

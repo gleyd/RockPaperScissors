@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSr-T3-EKO">
-                                <rect key="frame" x="102" y="262" width="170" height="30"/>
+                                <rect key="frame" x="88" y="262" width="199" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ordinateur vs Ordinateur"/>
+                                <state key="normal" title="Ordinateur contre Ordinateur"/>
                                 <connections>
                                     <action selector="goGameComputerVsComputer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeO-go-Uey"/>
                                 </connections>
@@ -33,9 +33,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbD-lv-p5D">
-                                <rect key="frame" x="115" y="224" width="144" height="30"/>
+                                <rect key="frame" x="101" y="224" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Joueur vs Ordinateur"/>
+                                <state key="normal" title="Joueur contre Ordinateur"/>
                                 <connections>
                                     <action selector="goGamePlayerVsComputer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g55-MT-WO9"/>
                                 </connections>
@@ -170,7 +170,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9S-95-otm">
                                 <rect key="frame" x="164.5" y="587" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Retour"/>
                                 <connections>
                                     <action selector="dissMissView:" destination="PY2-X2-4Ip" eventType="touchUpInside" id="g82-Og-uhQ"/>
                                 </connections>
