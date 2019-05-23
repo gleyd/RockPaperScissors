@@ -14,15 +14,10 @@ class RoundPresenter {
     func result(player1: Player, player2: Player) -> Player?{
         guard let choice1 = player1.choice, let choice2 = player2.choice else {return nil }
         guard choice1 != choice2 else {return nil}
-        switch (choice1,choice2) {
-        case (.rock,.scissors):
+        if choice1.beatsList.contains(choice2) {
             return player1
-        case (.scissors,.paper):
-            return player1
-        case (.paper,.rock):
-            return player1
-        default:
-           return  player2
+        } else {
+            return player2
         }
     }
 

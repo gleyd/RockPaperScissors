@@ -21,6 +21,7 @@
 		4A23A8C422969B6A0097B11E /* GameModeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */; };
 		4A23A8C522969B6D0097B11E /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95522957BC800A17018 /* GameViewProtocol.swift */; };
 		4A23A8C72296D0D30097B11E /* GamePlayerVsComputerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8C62296D0D30097B11E /* GamePlayerVsComputerProtocol.swift */; };
+		4A23A8C82296FCFC0097B11E /* GamePlayerVsComputerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8C62296D0D30097B11E /* GamePlayerVsComputerProtocol.swift */; };
 		4ABBB95122956C6600A17018 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798E22954C26003676F1 /* Sign.swift */; };
 		4ABBB95222956CAC00A17018 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2799022954E1F003676F1 /* Computer.swift */; };
 		4ABBB95622957BC800A17018 /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95522957BC800A17018 /* GameViewProtocol.swift */; };
@@ -329,6 +330,7 @@
 				4ABBB95122956C6600A17018 /* Sign.swift in Sources */,
 				4A23A8C422969B6A0097B11E /* GameModeViewProtocol.swift in Sources */,
 				4AE2798D229444D5003676F1 /* Player.swift in Sources */,
+				4A23A8C82296FCFC0097B11E /* GamePlayerVsComputerProtocol.swift in Sources */,
 				4AE2798A22943642003676F1 /* RoundPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
