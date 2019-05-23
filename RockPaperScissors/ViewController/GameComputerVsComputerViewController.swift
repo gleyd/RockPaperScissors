@@ -42,19 +42,7 @@ class GameComputerVsComputerViewController: UIViewController {
 
 
 extension GameComputerVsComputerViewController : GameViewProtocol {
-    func chooseSign(sign: Sign) {
+    func updateResult(result: String) {
         
     }
-    
-    func showPopUpResult() {
-        
-    }
-    
-    func hidePopUpResult() {
-        
-    }
-    
-    
-    
-    
 }

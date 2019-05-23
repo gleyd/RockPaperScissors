@@ -62,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player vs Computer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-sz-n45">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joueur contre Ordinateur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-sz-n45">
                                 <rect key="frame" x="15" y="70" width="345" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -70,26 +70,89 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMP-h9-tr3">
                                 <rect key="frame" x="164.5" y="587" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Retour"/>
                                 <connections>
                                     <action selector="dissMissView:" destination="tzf-s2-1vz" eventType="touchUpInside" id="l7w-Y8-hFr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choix utilisateur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUl-df-DNA">
+                                <rect key="frame" x="15" y="140" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand-scissors" translatesAutoresizingMaskIntoConstraints="NO" id="HlU-OA-Shm">
+                                <rect key="frame" x="247.5" y="216" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1cx-GR-Z5M"/>
+                                    <constraint firstAttribute="height" constant="60" id="pxt-oW-PM6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYv-Zv-adt">
+                                <rect key="frame" x="168" y="318" width="39" height="30"/>
+                                <state key="normal" title="Jouer"/>
+                                <connections>
+                                    <action selector="play:" destination="tzf-s2-1vz" eventType="touchUpInside" id="Sdr-93-WK0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand-rock" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-Jc-0a4">
+                                <rect key="frame" x="68.5" y="216" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1zP-3J-YkD"/>
+                                    <constraint firstAttribute="height" constant="60" id="OuQ-ey-mOI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand-paper" translatesAutoresizingMaskIntoConstraints="NO" id="okr-Bn-mHR">
+                                <rect key="frame" x="157.5" y="216" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="V8i-Al-rsV"/>
+                                    <constraint firstAttribute="width" constant="60" id="xf5-Yq-Mst"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ax-Oa-8M7">
+                                <rect key="frame" x="22" y="399" width="331" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="iYv-Zv-adt" firstAttribute="centerX" secondItem="Xrb-ik-xdS" secondAttribute="centerX" id="46q-XE-Tv4"/>
                             <constraint firstItem="3GF-wZ-zch" firstAttribute="trailing" secondItem="ZMf-sz-n45" secondAttribute="trailing" constant="15" id="5UQ-m8-Kr0"/>
+                            <constraint firstItem="RUl-df-DNA" firstAttribute="top" secondItem="ZMf-sz-n45" secondAttribute="bottom" constant="49" id="7JS-OJ-L3A"/>
                             <constraint firstItem="ZMf-sz-n45" firstAttribute="top" secondItem="3GF-wZ-zch" secondAttribute="top" constant="50" id="Bmo-5U-QhK"/>
+                            <constraint firstItem="iYv-Zv-adt" firstAttribute="top" secondItem="okr-Bn-mHR" secondAttribute="bottom" constant="42" id="Iuj-kZ-A7n"/>
+                            <constraint firstItem="okr-Bn-mHR" firstAttribute="centerX" secondItem="Xrb-ik-xdS" secondAttribute="centerX" id="JUD-0c-yp3"/>
+                            <constraint firstItem="3GF-wZ-zch" firstAttribute="trailing" secondItem="RUl-df-DNA" secondAttribute="trailing" constant="15" id="OrY-61-a1w"/>
                             <constraint firstItem="ZMf-sz-n45" firstAttribute="leading" secondItem="3GF-wZ-zch" secondAttribute="leading" constant="15" id="P2v-sP-GdZ"/>
+                            <constraint firstItem="okr-Bn-mHR" firstAttribute="top" secondItem="RUl-df-DNA" secondAttribute="bottom" constant="55" id="PvT-YT-DGu"/>
                             <constraint firstItem="3GF-wZ-zch" firstAttribute="bottom" secondItem="IMP-h9-tr3" secondAttribute="bottom" constant="50" id="Tvy-kF-zsc"/>
+                            <constraint firstItem="okr-Bn-mHR" firstAttribute="leading" secondItem="mKG-Jc-0a4" secondAttribute="trailing" constant="29" id="XsM-BO-jRP"/>
+                            <constraint firstItem="mKG-Jc-0a4" firstAttribute="top" secondItem="RUl-df-DNA" secondAttribute="bottom" constant="55" id="YGq-D4-g1c"/>
+                            <constraint firstItem="3GF-wZ-zch" firstAttribute="trailing" secondItem="4ax-Oa-8M7" secondAttribute="trailing" constant="22" id="Yip-lK-Y5u"/>
                             <constraint firstItem="IMP-h9-tr3" firstAttribute="centerX" secondItem="Xrb-ik-xdS" secondAttribute="centerX" id="gtb-0Y-JgP"/>
+                            <constraint firstItem="3GF-wZ-zch" firstAttribute="bottom" secondItem="HlU-OA-Shm" secondAttribute="bottom" constant="391" id="hHI-Ov-1cy"/>
+                            <constraint firstItem="4ax-Oa-8M7" firstAttribute="top" secondItem="iYv-Zv-adt" secondAttribute="bottom" constant="51" id="hZj-G0-eVu"/>
+                            <constraint firstItem="HlU-OA-Shm" firstAttribute="leading" secondItem="okr-Bn-mHR" secondAttribute="trailing" constant="30" id="kGB-hh-3Mg"/>
+                            <constraint firstItem="RUl-df-DNA" firstAttribute="leading" secondItem="3GF-wZ-zch" secondAttribute="leading" constant="15" id="mlN-ET-FUN"/>
+                            <constraint firstItem="3GF-wZ-zch" firstAttribute="bottom" secondItem="mKG-Jc-0a4" secondAttribute="bottom" constant="391" id="qUe-AQ-YJ2"/>
+                            <constraint firstItem="4ax-Oa-8M7" firstAttribute="leading" secondItem="3GF-wZ-zch" secondAttribute="leading" constant="22" id="yqS-0L-6x9"/>
+                            <constraint firstItem="HlU-OA-Shm" firstAttribute="top" secondItem="RUl-df-DNA" secondAttribute="bottom" constant="55" id="zPo-T0-V9p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3GF-wZ-zch"/>
                     </view>
+                    <connections>
+                        <outlet property="paperImage" destination="okr-Bn-mHR" id="jti-1z-v8B"/>
+                        <outlet property="playBtn" destination="iYv-Zv-adt" id="sOc-td-mP5"/>
+                        <outlet property="resultGame" destination="4ax-Oa-8M7" id="gdK-74-8u4"/>
+                        <outlet property="rockImage" destination="mKG-Jc-0a4" id="6rb-QA-TbP"/>
+                        <outlet property="scissorsImage" destination="HlU-OA-Shm" id="2Nk-C6-9Rm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gZ-Uc-exB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="-372"/>
+            <point key="canvasLocation" x="-2018" y="-617"/>
         </scene>
         <!--Game Computer Vs Computer View Controller-->
         <scene sceneID="X4C-Ds-nqP">
@@ -144,4 +207,9 @@
             <point key="canvasLocation" x="1079" y="-84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand-paper" width="96" height="96"/>
+        <image name="hand-rock" width="96" height="96"/>
+        <image name="hand-scissors" width="96" height="96"/>
+    </resources>
 </document>

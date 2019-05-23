@@ -8,10 +8,7 @@
 import Foundation
 import UIKit
 protocol GameViewProtocol {
-    func chooseSign(sign: Sign)
-    func showPopUpResult()
-    func hidePopUpResult()
-    
+    func updateResult(result:String)
 }
 
 

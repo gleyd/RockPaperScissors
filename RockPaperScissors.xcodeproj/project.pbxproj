@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4A23A8B1229599CD0097B11E /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B0229599CD0097B11E /* GameModeViewController.swift */; };
-		4A23A8B3229599F10097B11E /* PopUpResultGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B2229599F10097B11E /* PopUpResultGameViewController.swift */; };
 		4A23A8B52295A5580097B11E /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B42295A5580097B11E /* GameMode.swift */; };
 		4A23A8B7229683FD0097B11E /* GamePlayerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */; };
 		4A23A8B9229684190097B11E /* GameComputerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */; };
@@ -21,6 +20,7 @@
 		4A23A8C322969B570097B11E /* GamePlayerVsComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */; };
 		4A23A8C422969B6A0097B11E /* GameModeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */; };
 		4A23A8C522969B6D0097B11E /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95522957BC800A17018 /* GameViewProtocol.swift */; };
+		4A23A8C72296D0D30097B11E /* GamePlayerVsComputerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23A8C62296D0D30097B11E /* GamePlayerVsComputerProtocol.swift */; };
 		4ABBB95122956C6600A17018 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2798E22954C26003676F1 /* Sign.swift */; };
 		4ABBB95222956CAC00A17018 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2799022954E1F003676F1 /* Computer.swift */; };
 		4ABBB95622957BC800A17018 /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABBB95522957BC800A17018 /* GameViewProtocol.swift */; };
@@ -51,13 +51,13 @@
 
 /* Begin PBXFileReference section */
 		4A23A8B0229599CD0097B11E /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
-		4A23A8B2229599F10097B11E /* PopUpResultGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpResultGameViewController.swift; sourceTree = "<group>"; };
 		4A23A8B42295A5580097B11E /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayerVsComputerViewController.swift; sourceTree = "<group>"; };
 		4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComputerVsComputerViewController.swift; sourceTree = "<group>"; };
 		4A23A8BA2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVsComputerRoundPresenter.swift; sourceTree = "<group>"; };
 		4A23A8BC229697E80097B11E /* ComputerVsComputerRoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerVsComputerRoundPresenter.swift; sourceTree = "<group>"; };
 		4A23A8C0229699320097B11E /* PlayerVsComputerRoundPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVsComputerRoundPresenterTest.swift; sourceTree = "<group>"; };
+		4A23A8C62296D0D30097B11E /* GamePlayerVsComputerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayerVsComputerProtocol.swift; sourceTree = "<group>"; };
 		4ABBB95522957BC800A17018 /* GameViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewProtocol.swift; sourceTree = "<group>"; };
 		4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewProtocol.swift; sourceTree = "<group>"; };
 		4AE2795C22942912003676F1 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +107,7 @@
 			children = (
 				4ABBB95522957BC800A17018 /* GameViewProtocol.swift */,
 				4ABBB95922958E8600A17018 /* GameModeViewProtocol.swift */,
+				4A23A8C62296D0D30097B11E /* GamePlayerVsComputerProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				4A23A8B0229599CD0097B11E /* GameModeViewController.swift */,
-				4A23A8B2229599F10097B11E /* PopUpResultGameViewController.swift */,
 				4A23A8B6229683FD0097B11E /* GamePlayerVsComputerViewController.swift */,
 				4A23A8B8229684190097B11E /* GameComputerVsComputerViewController.swift */,
 			);
@@ -296,10 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A23A8B3229599F10097B11E /* PopUpResultGameViewController.swift in Sources */,
 				4ABBB95A22958E8600A17018 /* GameModeViewProtocol.swift in Sources */,
 				4A23A8B7229683FD0097B11E /* GamePlayerVsComputerViewController.swift in Sources */,
 				4AE2799122954E1F003676F1 /* Computer.swift in Sources */,
+				4A23A8C72296D0D30097B11E /* GamePlayerVsComputerProtocol.swift in Sources */,
 				4A23A8BB2296944B0097B11E /* PlayerVsComputerRoundPresenter.swift in Sources */,
 				4AE2798F22954C26003676F1 /* Sign.swift in Sources */,
 				4AE2796022942912003676F1 /* AppDelegate.swift in Sources */,

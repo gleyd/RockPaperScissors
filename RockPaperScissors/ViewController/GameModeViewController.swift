@@ -14,7 +14,7 @@ class GameModeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+ 
     @IBAction func goGamePlayerVsComputer(_ sender: Any) {
        choosePlayerVersusComputer()
     }

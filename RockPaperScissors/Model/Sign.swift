@@ -7,10 +7,14 @@
 
 import Foundation
 
-enum Sign : CaseIterable {
-    case rock
-    case paper
-    case scissors
+enum Sign : String, CaseIterable {
+    case rock = "pierre"
+    case paper = "feuille"
+    case scissors = "ciseau"
     
-    
+    var description : String {
+        get {
+            return self.rawValue
+        }
+    }
 }
