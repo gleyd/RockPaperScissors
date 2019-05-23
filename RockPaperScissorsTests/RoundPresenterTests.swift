@@ -26,17 +26,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .scissors
         
-        
-        let expected : Player = player1
+        let expected : String = "\(player1.name)(\(Sign.rock.description)) gagne contre \(player2.name)(\(Sign.scissors.description))"
         
         // Act
-        if let result = presenter.result(player1: player1, player2: player2) {
+        let result = presenter.resultGame(player1: player1, player2: player2)
             
         // Assert
-            XCTAssertEqual(expected, result)
-        } else {
-            XCTAssert(false, "Rock don't beat Scissors")
-        }
+        XCTAssertEqual(expected, result)
     }
     
     func testPlayerChoiceScissorsBeatsPlayerChoicePaper(){
@@ -46,17 +42,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .paper
      
-        
-        let expected : Player = player1
+        let expected : String = "\(player1.name)(\(Sign.scissors.description)) gagne contre \(player2.name)(\(Sign.paper.description))"
 
         // Act
-        if let result = presenter.result(player1: player1, player2: player2) {
-            
+        let result = presenter.resultGame(player1: player1, player2: player2)
+
         // Assert
-            XCTAssertEqual(expected, result)
-        } else {
-            XCTAssert(false, "Scissors don't beat Paper")
-        }
+        XCTAssertEqual(expected, result)
     }
 
     func testPlayerChoicePaperBeatsPlayerChoiceRock(){
@@ -66,17 +58,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .rock
        
-        
-        let expected : Player = player1
+        let expected : String = "\(player1.name)(\(Sign.paper.description)) gagne contre \(player2.name)(\(Sign.rock.description))"
 
         // Act
-        if let result = presenter.result(player1: player1, player2: player2) {
-            
+        let result = presenter.resultGame(player1: player1, player2: player2)
+        
         // Assert
-            XCTAssertEqual(expected, result)
-        } else {
-            XCTAssert(false, "Paper don't beat Rock")
-        }
+        XCTAssertEqual(expected, result)
     }
     
     func testPlayersHandSignEqualPaper(){
@@ -86,17 +74,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .paper
    
+        let expected :String = "Egalité (\(Sign.paper.description))"
         
-        let expected :Player? = nil
+        /// Act
+        let result = presenter.resultGame(player1: player1, player2: player2)
         
-        // Act
-        if expected == presenter.result(player1: player1, player2: player2) {
-            
         // Assert
-            XCTAssert(true, "the result of the round is equal")
-        } else {
-            XCTAssert(false, "the result of the round is not equal")
-        }
+        XCTAssertEqual(expected, result)
     }
     
     func testPlayersHandSignEqualRock(){
@@ -106,17 +90,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .rock
       
-        
-        let expected :Player? = nil
+        let expected :String = "Egalité (\(Sign.rock.description))"
         
         // Act
-        if expected == presenter.result(player1: player1, player2: player2) {
-            
+        let result = presenter.resultGame(player1: player1, player2: player2)
+        
         // Assert
-            XCTAssert(true, "the result of the round is equal")
-        } else {
-            XCTAssert(false, "the result of the round is not equal")
-        }
+        XCTAssertEqual(expected, result)
     }
     
     func testPlayersHandSignEqualScissor(){
@@ -126,17 +106,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .scissors
      
-        
-        let expected :Player? = nil
+        let expected :String = "Egalité (\(Sign.scissors.description))"
         
         // Act
-        if expected == presenter.result(player1: player1, player2: player2) {
-
+        let result = presenter.resultGame(player1: player1, player2: player2)
+        
         // Assert
-            XCTAssert(true, "the result of the round is equal")
-        } else {
-            XCTAssert(false, "the result of the round is not equal")
-        }
+        XCTAssertEqual(expected, result)
     }
     
 
@@ -146,17 +122,14 @@ class RoundPresenterTests: XCTestCase {
         player1.choice = .scissors
         let player2 = Player(id: 2)
         player2.choice = .rock
-       
         
-        let expected :Player? = player2
+        let expected : String = "\(player1.name)(\(Sign.scissors.description)) perd contre \(player2.name)(\(Sign.rock.description))"
+        
         // Act
-
-        if let result = presenter.result(player1: player1, player2: player2) {
+        let result = presenter.resultGame(player1: player1, player2: player2)
+        
         // Assert
-            XCTAssertEqual(expected, result)
-        } else {
-            XCTAssert(false, "Scissors don't lose Rock")
-        }
+        XCTAssertEqual(expected, result)
     }
 
     func testPlayerChoicePaperLosePlayerChoiceScissors(){
@@ -166,16 +139,13 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .scissors
     
+        let expected : String = "\(player1.name)(\(Sign.paper.description)) perd contre \(player2.name)(\(Sign.scissors.description))"
         
-        let expected :Player? = player2
         // Act
-
-        if let result = presenter.result(player1: player1, player2: player2) {
+        let result = presenter.resultGame(player1: player1, player2: player2)
+        
         // Assert
-            XCTAssertEqual(expected, result)
-        } else {
-            XCTAssert(false, "Paper don't lose Scissors")
-        }
+        XCTAssertEqual(expected, result)
     }
 
     func testPlayerChoiceRockLosePlayerChoicePaper(){
@@ -185,19 +155,12 @@ class RoundPresenterTests: XCTestCase {
         let player2 = Player(id: 2)
         player2.choice = .paper
 
-        let expected :Player? = player2
+        let expected : String = "\(player1.name)(\(Sign.rock.description)) perd contre \(player2.name)(\(Sign.paper.description))"
         
         // Act
-        if let result = presenter.result(player1: player1, player2: player2) {
+        let result = presenter.resultGame(player1: player1, player2: player2)
+        
         // Assert
-            XCTAssertEqual(expected, result)
-        } else {
-            XCTAssert(false, "Rock don't lose Paper")
-        }
+        XCTAssertEqual(expected, result)
     }
-
-
-    
-    
-    
 }
