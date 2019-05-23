@@ -28,16 +28,17 @@ class PlayerVsComputerRoundPresenter : RoundPresenter {
         player.choice = sign
         self.view?.borderSelectSign(sign: sign)
     }
-    func resultPlayerVsComputer(player1: Player, player2: Player) {
-        if let player = self.result(player1: player1, player2: player2){
+    
+    func resultPlayerVsComputer(player: Player, computer: Player) {
+        if let resultPlayer = self.result(player1: player, player2: computer){
             var result = ""
-            switch player {
-            case player1 :
-                guard let choice1 = player1.choice, let choice2 = player2.choice else {return}
-                result = "\(player1.name)(\(choice1.description)) gagne contre \(player2.name)(\(choice2.description))"
-            case player2 :
-                guard let choice1 = player1.choice, let choice2 = player2.choice else {return}
-                result = "\(player1.name)(\(choice1.description)) perd contre \(player2.name)(\(choice2.description))"
+            switch resultPlayer {
+            case player :
+                guard let choice1 = player.choice, let choice2 = computer.choice else {return}
+                result = "\(player.name)(\(choice1.description)) gagne contre \(computer.name)(\(choice2.description))"
+            case computer :
+                guard let choice1 = player.choice, let choice2 = computer.choice else {return}
+                result = "\(player.name)(\(choice1.description)) perd contre \(computer.name)(\(choice2.description))"
             default : break
             }
             self.view?.updateResult(result: result)

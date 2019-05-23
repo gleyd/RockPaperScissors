@@ -87,7 +87,7 @@ class GamePlayerVsComputerViewController: UIViewController {
     
     @IBAction func play(_ sender: Any) {
         self.computer.setRandomChoice()
-        self.presenter.resultPlayerVsComputer(player1: player, player2: computer)
+        self.presenter.resultPlayerVsComputer(player: player, computer: computer)
     }
     
     /*
